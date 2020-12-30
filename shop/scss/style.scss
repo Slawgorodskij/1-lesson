@@ -44,10 +44,12 @@ ul li {
 /*--------------------*/
 
 body {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
     background-color: #e5e5e5;
 }
 .container {
-    max-width: 1100px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -64,6 +66,53 @@ header {
 
 /*--------------------*/
 
+/*====titlePage====*/
+.title-page {
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+}
+.title-page__photo {
+    width: 50%;
+    overflow: hidden;
+}
+.title-page__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title-page__slogan {
+    background-color: #f1e4e6;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+}
+.slogan__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3%;
+    max-height: 92px;
+    border-left: 12px solid #f16d7f;
+}
+.slogan__text h2 {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+}
+.slogan__text p {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+}
+.slogan__text font {
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 44px;
+    color: #f16d7f;
+}
 /*====footer====*/
 .footer {
     background-color: #f9f9f9;
