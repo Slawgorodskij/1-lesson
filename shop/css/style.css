@@ -59,7 +59,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .container {
@@ -70,7 +70,46 @@ body {
 
 /*====HEADER====*/
 header {
-  background-color: #e5e5e5;
+  background-color: #222;
+}
+
+.header__icons {
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__left {
+  display: inline-box;
+}
+
+.header__logo {
+  margin-right: 40px;
+}
+
+.header__menu {
+  margin-right: 34px;
+}
+
+.header__forma {
+  margin-right: 33px;
+}
+
+.icon {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.icon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 /*--------------------*/
@@ -174,8 +213,8 @@ header {
 
 .hover-block,
 .item__layer,
-.item__photo img,
-.item-bottom__photo img {
+.item__photo--images,
+.item-bottom__photo--images {
   position: absolute;
   top: 0;
   left: 0;
@@ -183,7 +222,7 @@ header {
   height: 100%;
 }
 
-.item__photo img {
+.item__photo--images {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 1;
@@ -286,18 +325,18 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 15px;
+  margin-bottom: 30px;
 }
 
 .item__photo-block {
   position: relative;
   overflow: hidden;
   height: 420px;
-  margin-bottom: 25px;
 }
 
 .hover-block {
   background: rgba(58, 56, 56, 0.86);
-  z-index: 2;
+  z-index: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,6 +368,16 @@ header {
   height: 24px;
 }
 
+.hover-block__text {
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.item__photo-block:hover .hover-block {
+  z-index: 2;
+}
+
 .description-block {
   background-color: #f8f8f8;
   padding: 0 29px 0 16px;
@@ -336,6 +385,7 @@ header {
 
 .description-block__title {
   margin-bottom: 12px;
+  padding-top: 25px;
   font-size: 13px;
   line-height: 16px;
   color: #000000;
@@ -350,9 +400,56 @@ header {
 }
 
 .description-block__price {
+  padding-bottom: 25px;
   font-size: 16px;
   line-height: 19px;
   color: #f16d7f;
+}
+
+/*--------------------*/
+/*====reservation====*/
+.reservation {
+  background: #222224;
+}
+
+.reservation__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reservation__item {
+  padding: 103px 0 104px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.333%;
+          flex: 1 1 33.333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  color: #fbfbfb;
+}
+
+.reservation__logo {
+  margin-bottom: 28px;
+}
+
+.reservation__title {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.reservation__text {
+  font-size: 14px;
+  line-height: 17px;
 }
 
 /*--------------------*/
