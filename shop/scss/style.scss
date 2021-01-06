@@ -83,7 +83,7 @@ header {
     margin-right: 33px;
 }
 .icon {
-    transition: all 0.2s linear;
+    transition: all 0.3s linear;
 }
 .icon:hover {
     transform: scale(1.2);
@@ -92,6 +92,11 @@ header {
 
 /*====titlePage====*/
 .title-page {
+    position: relative;
+    z-index: 1;
+
+}
+.title-page__main{
     margin: 0 auto;
 
     display: flex;
@@ -111,7 +116,7 @@ header {
     width: 50%;
     display: flex;
     align-items: center;
-    padding-left: 8%;
+    padding-left: 5%;
 }
 .slogan__text {
     display: flex;
@@ -137,6 +142,51 @@ header {
     line-height: 44px;
     color: #f16d7f;
 }
+/*--------------------*/
+
+/*====title-page__menu====*/
+.title-page__menu {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; 
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.5);
+}
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 232px;
+    height: 764px;
+    background-color: #fff;
+
+    font-size: 14px;
+    line-height: 17px;
+}
+.icon--cross {
+    float: right;
+    margin: 16px 16px 8px 0;
+}
+.menu__title {
+    clear: both;
+    padding-left: 34px;
+    margin-bottom: 24px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+}
+.menu__section {
+    padding-left: 33px;
+    text-transform: uppercase;
+    color: #f16d7f;
+}
+.menu__section--item {
+    padding-left: 54px;
+    color: #6f6e6e;
+}
+/*--------------------*/
 
 /*====deal====*/
 .deal {
@@ -155,6 +205,7 @@ header {
     overflow: hidden;
     height: 260px;
     margin: 0 15px 30px;
+    transition: all 0.3s linear;
 }
 .hover-block,
 .item__layer,
@@ -200,6 +251,7 @@ header {
     height: 260px;
     position: relative;
     overflow: hidden;
+    transition: all 0.3s linear;
 }
 /*--------------------*/
 
@@ -239,6 +291,7 @@ header {
     position: relative;
     overflow: hidden;
     height: 420px;
+    transition: all 0.3s linear;
 }
 .hover-block {
     background: rgba(58, 56, 56, 0.86);
@@ -292,6 +345,25 @@ header {
     line-height: 19px;
     color: #f16d7f;
 }
+.suggestion__button {
+    display: block;
+    margin: 18px auto 95px;
+
+    width: 211px;
+    height: 47px;
+    background-color: #fff;
+    border: 1px solid #ff6a6a;
+
+    font-size: 16px;
+    line-height: 19px;
+    color: #f26376;
+
+    transition: all 0.3s linear;
+}
+.suggestion__button:hover {
+    background-color: #f16d7f;
+    color: #fff;
+}
 /*--------------------*/
 
 /*====reservation====*/
@@ -304,12 +376,17 @@ header {
 }
 .reservation__item {
     padding: 103px 0 104px;
+
     flex: 1 1 33.333%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+
     color: #fbfbfb;
+
+    transition: all 0.3s linear;
 }
 .reservation__logo--1 {
     width: 45px;
@@ -432,6 +509,8 @@ header {
     padding: 0px 18px;
 
     color: #ffffff;
+
+    transition: all 0.3s linear;
 }
 .column__button--btn:hover {
     background: #f31734;
@@ -463,9 +542,12 @@ header {
     height: 32px;
     margin-right: 8px;
     background-color: #fff;
+
+    transition: all 0.3s linear;
 }
 .social__icon {
     fill: #000;
+    transition: all 0.3s linear;
 }
 .social__icon--1 {
     width: 8px;
